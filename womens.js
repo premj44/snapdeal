@@ -533,7 +533,7 @@ ratingimg : "https://media.istockphoto.com/vectors/five-stars-rating-vector-icon
 
 ];
 
-var cartdata = JSON.parse(localStorage.getItem("mycart")) || []
+var cartdata = JSON.parse(localStorage.getItem("cartiems")) || []
 //console.log(womensData)
 
  window.addEventListener("load", function(){
@@ -590,7 +590,7 @@ function displaywomendata(womensData)
  function womenCart(ele){
      console.log(womenCart)
      cartdata.push(ele)
-     localStorage.setItem("mycart",JSON.stringify(cartdata))
+     localStorage.setItem("cartitems",JSON.stringify(cartdata))
      alert("Item Added To The Cart")
  
  }
